@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voronoi and Delaunay</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./p5.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <div id="controls">
+
+      <!-- the resolution controller -->
+      <div class="res">
+        <h3>Resolution, controls the number of cells:</h3>
+        <input type="number" id="res" min="0" max="100" step="1">
+      </div>
+
+      <!-- cell type controller -->
+      <div class="type-parameters">
+        <h3>Diagram Type</h3>
+        <input type="range" name="type" id="typeRange" min="0" max="2" value="0" step="1">
+        <div class="types">
+          <p>Voronoi</p>
+          <p>Delaunay</p>
+          <p>Voronoi + Delaunay</p>
+        </div>
+      </div>
+
+      <!-- controlling colors -->
+      <div class="colors">
+
+        <!-- text labels -->
+        <div class="text">
+          <p>Grid Color</p>
+          <p>Vertex Color</p>
+          <p>Voronoi Stroke</p>
+          <p>Voronoi Fill</p>
+          <p>Delaunay Stroke</p>
+          <p>Delaunay Fill</p>
+          <p>Background Color</p>
+        </div>
+
+        <!-- on/off toggles -->
+        <div class="toggles">
+          <input type="range" class="toggle" id="gridColorToggle" min="0" max="1" step="1" value="0">
+          <input type="range" class="toggle" id="pointColorToggle" min="0" max="1" step="1" value="1">
+          <input type="range" class="toggle" id="voronoiStrokeToggle" min="0" max="1" step="1" value="1">
+          <input type="range" class="toggle" id="voronoiFillToggle" min="0" max="1" step="1" value="0">
+          <input type="range" class="toggle" id="delaunayStrokeToggle" min="0" max="1" step="1" value="1">
+          <input type="range" class="toggle" id="delaunayFillToggle" min="0" max="1" step="1" value="0">
+          <p></p>
+        </div>
+
+        <!-- color pickers -->
+        <div class="pickers">
+          <input type="color" id="gridColor" value="#333333">
+          <input type="color" id="pointColor" value="#ff0000">
+          <input type="color" id="voronoiStroke" value="#cccccc">
+          <input type="color" id="voronoiFill" value="#333333">
+          <input type="color" id="delaunayStroke" value="#cccccc">
+          <input type="color" id="delaunayFill" value="#333333">
+          <input type="color" id="backgroundColor" value="#0a0014">
+        </div>
+
+      </div>
+
+      <!-- regenerate button -->
+      <button id="regen">Regenrate</button>
+    </div>
+  </main>
+  <script src="./sketch.js"></script>
+  <script src="./Cell.js"></script>
+  <script src="./Line.js"></script>
+  <script src="./Events.js"></script>
+  <script src="./Colors.js"></script>
+</body>
+
+</html>

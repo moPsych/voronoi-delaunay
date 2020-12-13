@@ -1,0 +1,154 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(5, 0, 15);
+    overflow-x: hidden;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  canvas {
+    display: block;
+    margin: 1.3vw;
+  }
+
+  h3,
+  p {
+    color: #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* the whole control panel */
+  #controls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    align-self: baseline;
+  }
+
+  /* resolution control */
+  .res {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* resolution input */
+  .res input {
+    background-color: #ccc;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.2em;
+    outline: none;
+    border-radius: 0;
+    border: none;
+    color: #222;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* types control */
+  .type-parameters {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  /* types control slidet */
+  .type-parameters input {
+    width: 60%;
+  }
+
+  /* types text group */
+  .types {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  /* types text element */
+  .types p {
+    text-align: center;
+  }
+
+  /* colors controll */
+  .colors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px;
+    height: 100%;
+  }
+
+  /* color control labels */
+  .text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  /* color on/off toggles */
+  .toggles {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* color pickers */
+  .pickers {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  /* color toggle element */
+  .colors .toggle {
+    width: 2em;
+  }
+
+  /* regenerate button */
+  #regen {
+    width: auto;
+    font-size: 1.2em;
+    border-radius: 0;
+    border: none;
+    outline: none;
+    color: #222;
+    padding: 10px;
+    background-color: #ccc;
+  }
+
+  #regen:active {
+    background-color: #999;
+  }
