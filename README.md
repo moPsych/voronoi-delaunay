@@ -1,9 +1,9 @@
 # Voronoi and Delaunay
 ## This is a grid based algorithm not the Fortune's algorithm.
 
-<img src="./img/1.png">
-<img src="./img/2.png">
-<img src="./img/3.png">
+<img src="./img/1.PNG">
+<img src="./img/2.PNG">
+<img src="./img/3.PNG">
 
 #
 
